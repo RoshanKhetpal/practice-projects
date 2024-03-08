@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #191825;
+
+      /* 1st Trick positions */
+      /* position: relative; */
+
+      /* 2nd trick Flexbox */
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+
+      /* 3rd trick grid */
+      /* display: grid;
+      place-items: center; */
+
+      /* 4th trick grid */
+      /* display: grid;
+      justify-content: center;
+      align-items: center; */
+
+      /* 5th trick with flex and margin*/
+      display: flex;
+      flex-direction: row;
+    }
+
+    .child {
+      width: 200px;
+      height: 200px;
+      background-color: salmon;
+      text-transform: uppercase;
+      color: black;
+      font-size: 20px;
+
+      /* 1st trick  */
+      /* position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); */
+
+      /* 5th trick  */
+      margin: auto;
+
+      /* Aligning text in center  */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div class="child">Roshan Khetpal</div>
+  </body>
+</html>
